@@ -21,7 +21,7 @@ include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include) # this is needed if use
 file(GLOB LIB_SRCS src/*.cpp)
 file(GLOB INCLUDE_FILES /include/siyi-sdk-cpp/*.h)
 
-SET(SIYI_LIBS siyi_sdk_cpp_s glog pthread)
+SET(SIYI_LIBS siyi_sdk_cpp_s glog pthread m)
 
 ADD_LIBRARY(siyi_sdk_cpp_s STATIC ${LIB_SRCS} ${INCLUDE_FILES})
 
